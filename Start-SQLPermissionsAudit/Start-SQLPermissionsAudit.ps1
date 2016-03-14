@@ -87,6 +87,7 @@ ForEach ($u in $users)
                             $row["Name"] = $ADUser.Name
                             $row["DatabaseName"] = $d.Name
                             $row["MemberOfRole"] = $l
+                            $row["FromGroupName"] = $u.Name
                             $objectsTable.Rows.Add($row)
                         }
                     }
